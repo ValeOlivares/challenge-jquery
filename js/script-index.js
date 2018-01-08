@@ -38,19 +38,18 @@ function renderRecipe(recipe) {
 	console.log( recipe.source.url);
 
 	$('.list-recipes').append("<a class='item-recipe' href='#'>" +
-			"<span class='attibution'>" +
-			"<span class='title-recipe'>" + recipe.title + "</span>" +
-			"<span class='metadata-recipe'>" +
-			"<span class='author-recipe'>" + recipe.source.name + "</span>" +
-			"<span class='bookmarks-recipe'>" +
-			"<span class='icon-bookmark'></span>" +
-			"</span>" +
-			"</span>" +
-			"</span>" +
-			"<img src='img/recipes/320x350/"+ recipe.name + ".jpg'>" +"</a>"
-  );
+	"<span class='attribution'>" +
+	"<span class='title-recipe'>" + recipe.title+ "</span>" +
+	"<span class='metadata-recipe>" +
+	"<span class='author-recipe'>" + recipe.source.name + "</span>" +
+	" <span class='bookmarks-recipe'>" +
+	"<span class='icon-bookmark'></span> " +
+	"</span>"+
+	"</span>"+
+	"</span>" +
+	"<img src='img/recipes/320x350/"+ recipe.name + ".jpg'>" +"</a>"
+	);
 }
-
 
 
 /*
