@@ -2,6 +2,7 @@ $(document).ready( function(){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
+	//llamando a la funcion para que sea ejecutada
 	 printNews();
 
 });
@@ -13,7 +14,15 @@ $(document).ready( function(){
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
-}
+	var recipes= recipesArray;
+	for (var i = 0; i < recipes.length; i++) {
+		if (recipes[i].highlighted===true) {
+			renderRecipe(recipes[i]);
+			// console.log(recipes[i]);
+		}
+
+	}
+};
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga
