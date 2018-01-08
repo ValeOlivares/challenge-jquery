@@ -2,6 +2,7 @@ $(document).ready( function(){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
+	 printNews();
 
 });
 
@@ -41,5 +42,11 @@ function renderActivities(activitiesArray) {
 function renderActivity(recipe) {
 
 }
-
+//elimina lo que tenga laclase hidden en el index
 $('.hidden').hide();
+
+//funcion para agregar noticias
+function printNews(){
+	$('#news').text('NUEVAS RECETAS');
+
+}
